@@ -1,8 +1,14 @@
 import './App.css';
+import Main from "./Componets/Main"
 
 function App() {
   return (
-    <div></div>
+    <>
+      <div>
+        <h1>Hello World</h1>
+      </div>
+      <Main />
+    </>
   );
 }
 
