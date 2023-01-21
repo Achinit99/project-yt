@@ -22,10 +22,9 @@ const myData = [
 function App() {
   return (
     <>
-      <Main />
       <div>
-        {myData.map((eleme) => {
-          return <h5>{eleme.name}</h5>;
+        {myData.map(({ name, city, position }, index) => {
+          return <h5><Main key={index} name={name} city={city} position={position} /></h5>;
         })}
       </div>
     </>
