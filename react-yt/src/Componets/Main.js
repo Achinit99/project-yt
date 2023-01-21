@@ -13,4 +13,4 @@ function Main({ name, city, position }) {
   )
 }
 
-export default Main
+export default Main;
