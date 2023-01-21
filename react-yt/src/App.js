@@ -1,13 +1,33 @@
 import './App.css';
 import Main from "./Componets/Main"
 
+const myData = [
+  {
+    name: 'Achini',
+    city: 'Kurunegala',
+    position: 'App Developer',
+  },
+  {
+    name: 'Avishka',
+    city: 'Narammala',
+    position: 'Software Developer',
+  },
+  {
+    name: 'Dimuthu',
+    city: 'Pothuhera',
+    position: 'Senior Developer',
+  },
+]
+
 function App() {
   return (
     <>
-      <div>
-        <h1>Hello World</h1>
-      </div>
       <Main />
+      <div>
+        {myData.map((eleme) => {
+          return <h5>{eleme.name}</h5>;
+        })}
+      </div>
     </>
   );
 }
